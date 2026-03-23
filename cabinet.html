@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <meta property="description" content="description">
+    <link rel="icon" href="/assets/images/favicon.svg">
+    <script src="/assets/main.js" type="module"></script>
+    <link rel="stylesheet" href="/assets/bundle.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__content" data-header="true">
+          <div class="header__container container">
+            <a class="header__logo" href="/">
+              <img src="/assets/images/logo/logo_01.svg" alt="Logo">
+            </a>
+            <nav class="header__navigation navigation" data-header-menu="true">
+              <div class="navigation__container">
+                <div class="navigation__scroll-content" data-custom-os="true">
+                  <div class="navigation__body">
+                    <div class="navigation__actions">
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="scoring">
+                        <span>Скоринг</span>
+                      </button>
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="profile">
+                        <span>Личный кабинет</span>
+                      </button>
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="news">
+                        <span>Лента событий</span>
+                      </button>
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="subscription">
+                        <span>Подписка</span>
+                      </button>
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="newsletter">
+                        <span>Рассылка</span>
+                      </button>
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="documents">
+                        <span>Документы</span>
+                      </button>
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="feedback">
+                        <span>Обратная связь</span>
+                      </button>
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="offers">
+                        <span>Мои предложения</span>
+                      </button>
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs">
+                        <span>О сервисе</span>
+                      </button>
+                      <button class="navigation__cabinet-action button_transparent button" type="button" data-tab-default="true" data-tab="profile_tabs">
+                        <span>Выход</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="navigation__current-user">Иван</div>
+                <button class="button" type="button">
+                  <span>Мои займы</span>
+                </button>
+              </div>
+            </nav>
+            <button class="header__menu-button" type="button" data-header-menu-button="true">
+              <svg class="header__menu-icon">
+                <use href="/assets/images/icons.svg#menu"></use>
+              </svg>
+              <svg class="header__close-icon">
+                <use href="/assets/images/icons.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="cabinet">
+        <section class="cabinet__actions content-grid">
+          <div class="cabinet-tab">
+            <div class="cabinet-tab__container">
+              <div class="cabinet-tab__header">
+                <div class="cabinet-tab__header-container" data-custom-os="true">
+                  <div class="cabinet-tab__actions">
+                    <button class="cabinet-tab__action is-active" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="scoring">Скоринг</button>
+                    <button class="cabinet-tab__action" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="profile">Личный кабинет</button>
+                    <button class="cabinet-tab__action" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="news">Лента событий</button>
+                    <button class="cabinet-tab__action" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="subscription">Подписка</button>
+                    <button class="cabinet-tab__action" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="newsletter">Рассылка</button>
+                    <button class="cabinet-tab__action" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="documents">Документы</button>
+                    <button class="cabinet-tab__action" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="feedback">Обратная связь</button>
+                    <button class="cabinet-tab__action" type="button" data-tab-default="true" data-tab="profile_tabs" data-tab-button="offers">Мои предложения</button>
+                    <button class="cabinet-tab__action" type="button">О сервисе</button>
+                    <button class="cabinet-tab__action" type="button">Выход</button>
+                  </div>
+                </div>
+              </div>
+              <div class="cabinet-tab__bodys">
+                <div class="cabinet-tab__body is-active" data-tab-default="true" data-tab="profile_tabs" data-tab-body="scoring">
+                  <div class="cabinet-tab__body-wrapper" data-tab-body-wrapper="true">
+                    <section class="scoring">
+                      <div class="scoring__container">
+                        <div class="scoring__group">
+                          <h3 class="cabinet__title">Скоринг</h3>
+                          <div class="scoring__points">
+                            <div class="scoring__current-points">
+                              <img src="/assets/images/scoring/img_01.svg" alt="points">
+                            </div>
+                            <div class="scoring__points-info">
+                              <span class="scoring__points-label">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев.</span>
+                              <ul class="subscription-features">
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Кредит за 10 минут</span>
+                                </li>
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Еженедельные выплаты</span>
+                                </li>
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Моментальные кредиты</span>
+                                </li>
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Гибкие условия</span>
+                                </li>
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Возможность переоценки скоринга</span>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="scoring__group">
+                          <h3 class="cabinet__title">Таблица градаций</h3>
+                          <div class="scoring__gradations">
+                            <div class="scoring__gradation">
+                              <span class="scoring__gradation-value">0-400</span>
+                              <span class="scoring__gradation-label">Недостаточный балл</span>
+                              <p class="scoring__gradation-description">По своей сути рыбатекст является альтернытивой традиционному Lorem ipsum, который вызывает.</p>
+                            </div>
+                            <div class="scoring__gradation">
+                              <span class="scoring__gradation-value">600 - 800</span>
+                              <span class="scoring__gradation-label">Хороший балл</span>
+                              <p class="scoring__gradation-description">По своей сути рыбатекст является альтернытивой традиционному Lorem ipsum, который вызывает.</p>
+                            </div>
+                            <div class="scoring__gradation">
+                              <span class="scoring__gradation-value">400 - 600</span>
+                              <span class="scoring__gradation-label">Достаточный балл</span>
+                              <p class="scoring__gradation-description">По своей сути рыбатекст является альтернытивой традиционному Lorem ipsum, который вызывает.</p>
+                            </div>
+                            <div class="scoring__gradation">
+                              <span class="scoring__gradation-value">800 - 1000</span>
+                              <span class="scoring__gradation-label">Высокий балл</span>
+                              <p class="scoring__gradation-description">По своей сути рыбатекст является альтернытивой традиционному Lorem ipsum, который вызывает.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="cabinet-tab__body" data-tab-default="true" data-tab="profile_tabs" data-tab-body="profile">
+                  <div class="cabinet-tab__body-wrapper" data-tab-body-wrapper="true">
+                    <section class="profile">
+                      <h3 class="cabinet__title">Ваши данные</h3>
+                      <div class="profile__container">
+                        <div class="profile__items">
+                          <div class="profile__item" data-toggle-card="true">
+                            <div class="profile__head">
+                              <span class="profile__label">Контактная информация</span>
+                              <button class="profile__button-edit" type="button" data-toggle-btn="true">
+                                <svg>
+                                  <use href="/assets/images/icons.svg#pen"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="profile__current is-active" data-toggle-current="true">
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Фамилия *</span>
+                                <strong class="profile__current-value">Иванов</strong>
+                              </div>
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Имя *</span>
+                                <strong class="profile__current-value">Иван</strong>
+                              </div>
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Отчество</span>
+                                <strong class="profile__current-value">-</strong>
+                              </div>
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Телефон *</span>
+                                <strong class="profile__current-value">+ 7 987 654 32 01</strong>
+                              </div>
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Email *</span>
+                                <strong class="profile__current-value">some-mail@gmail.com</strong>
+                              </div>
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Город *</span>
+                                <strong class="profile__current-value">г. Санкт - Петербург</strong>
+                              </div>
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Дата рождения *</span>
+                                <strong class="profile__current-value">01.01.1990</strong>
+                              </div>
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Пол *</span>
+                                <strong class="profile__current-value">Мужской</strong>
+                              </div>
+                            </div>
+                            <form class="profile__edit" style="display:none" data-toggle-edit="true">
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Фамилия *</span>
+                                <label class="input__wrapper" aria-label="Фамилия *">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true" value="Иванов">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Имя *</span>
+                                <label class="input__wrapper" aria-label="Имя *">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true" value="Иван">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Отчество</span>
+                                <label class="input__wrapper" aria-label="Отчество">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Телефон *</span>
+                                <label class="input__wrapper" aria-label="Телефон *">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true" value="Иван">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Email *</span>
+                                <label class="input__wrapper" aria-label="Email *">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true" value="some-mail@gmail.com">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Город *</span>
+                                <label class="input__wrapper" aria-label="Город *">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true" value="г. Санкт - Петербург">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Дата рождения *</span>
+                                <label class="input__wrapper" aria-label="Дата рождения *">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true" value="01.01.1990">
+                                  </div>
+                                  <svg class="input__icon">
+                                    <use href="/assets/images/icons.svg#calendar"></use>
+                                  </svg>
+                                </label>
+                              </div>
+                              <div class="radio">
+                                <span class="radio__label">Пол *</span>
+                                <div class="radio__wrapper">
+                                  <label class="radio__group" aria-label="Муж.">
+                                    <input class="radio__input" type="radio" name="sex" checked="" value="male">
+                                    <div class="radio__body">
+                                      <div class="radio__icon"></div>
+                                      <p class="radio__text">Муж.</p>
+                                    </div>
+                                  </label>
+                                  <label class="radio__group" aria-label="Жен.">
+                                    <input class="radio__input" type="radio" name="sex" value="female">
+                                    <div class="radio__body">
+                                      <div class="radio__icon"></div>
+                                      <p class="radio__text">Жен.</p>
+                                    </div>
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="profile__edit-actions">
+                                <button class="button" type="submit">
+                                  <span>Сохранить</span>
+                                </button>
+                                <button class="button_transparent button" type="button" data-toggle-btn="true">
+                                  <span>Отменить</span>
+                                </button>
+                              </div>
+                            </form>
+                          </div>
+                          <div class="profile__item" data-toggle-card="true">
+                            <div class="profile__head">
+                              <span class="profile__label">Паспортные данные</span>
+                              <button class="profile__button-edit" type="button" data-toggle-btn="true">
+                                <svg>
+                                  <use href="/assets/images/icons.svg#pen"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="profile__current is-active" data-toggle-current="true">
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Серия *</span>
+                                <strong class="profile__current-value">12 - 34</strong>
+                              </div>
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Номер *</span>
+                                <strong class="profile__current-value">12 34 45</strong>
+                              </div>
+                              <div class="profile__current-group">
+                                <span class="profile__current-label">Код подразделения *</span>
+                                <strong class="profile__current-value">123 - 456</strong>
+                              </div>
+                            </div>
+                            <form class="profile__edit" style="display:none" data-toggle-edit="true">
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Серия *</span>
+                                <label class="input__wrapper" aria-label="Серия *">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true" value="12 - 34">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Номер *</span>
+                                <label class="input__wrapper" aria-label="Номер *">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true" value="12 34 45">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Код подразделения *</span>
+                                <label class="input__wrapper" aria-label="Код подразделения *">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true" value="123 - 456">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="profile__edit-actions">
+                                <button class="button" type="submit">
+                                  <span>Сохранить</span>
+                                </button>
+                                <button class="button_transparent button" type="button" data-toggle-btn="true">
+                                  <span>Отменить</span>
+                                </button>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                        <div class="profile__footer">
+                          <p class="profile__footer-text">Если вы хотите отозвать свое согласие на обработку персональных данных, отправьте нам письмо.</p>
+                          <button class="button" type="button">
+                            <span>Написать нам</span>
+                          </button>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="cabinet-tab__body" data-tab-default="true" data-tab="profile_tabs" data-tab-body="news">
+                  <div class="cabinet-tab__body-wrapper" data-tab-body-wrapper="true">
+                    <section class="news">
+                      <div class="news__container">
+                        <h3 class="cabinet__title">Лента событий</h3>
+                        <div class="news__items">
+                          <div class="news__item new">
+                            <div class="news__head">
+                              <span class="news__label">Оформление подписки на месяц за 25$</span>
+                            </div>
+                            <time class="news__date">
+                              <span>21:40</span>
+                              <span>25 июня 2020</span>
+                            </time>
+                          </div>
+                          <div class="news__item new">
+                            <div class="news__head">
+                              <span class="news__label">Запрос на переоценку вашего скоринга с 400 баллов до 600 баллов</span>
+                            </div>
+                            <time class="news__date">
+                              <span>21:40</span>
+                              <span>25 июня 2020</span>
+                            </time>
+                          </div>
+                          <div class="news__item">
+                            <div class="news__head">
+                              <span class="news__label">Списание $25 с карты ****2144</span>
+                            </div>
+                            <time class="news__date">
+                              <span>21:40</span>
+                              <span>25 июня 2020</span>
+                            </time>
+                          </div>
+                          <div class="news__item">
+                            <div class="news__head">
+                              <span class="news__label">Оформление подписки на месяц за $25</span>
+                            </div>
+                            <time class="news__date">
+                              <span>21:40</span>
+                              <span>25 июня 2020</span>
+                            </time>
+                          </div>
+                        </div>
+                        <div class="news__actions">
+                          <button class="news__more" type="button">Показать ещё</button>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="cabinet-tab__body" data-tab-default="true" data-tab="profile_tabs" data-tab-body="subscription">
+                  <div class="cabinet-tab__body-wrapper" data-tab-body-wrapper="true">
+                    <section class="subscription">
+                      <div class="subscription__container">
+                        <h3 class="cabinet__title">Подписка</h3>
+                        <div class="subscription__body">
+                          <div class="subscription__plan">
+                            <div class="subscription__plan-wrapper">
+                              <strong class="subscription__sum">399 ₽</strong>
+                              <span class="subscription__label">Недельный план</span>
+                              <ul class="subscription-features">
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Кредит за 10 минут</span>
+                                </li>
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Еженедельные выплаты</span>
+                                </li>
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Моментальные кредиты</span>
+                                </li>
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Гибкие условия</span>
+                                </li>
+                                <li>
+                                  <svg>
+                                    <use href="/assets/images/icons.svg#check"></use>
+                                  </svg>
+                                  <span>Возможность переоценки скоринга</span>
+                                </li>
+                              </ul>
+                            </div>
+                            <button class="subscription__button button" type="button">
+                              <span>Сменить</span>
+                            </button>
+                          </div>
+                          <div class="subscription__info">
+                            <span class="subscription__label">Как вернуть деньги?</span>
+                            <p class="subscription__info-description">По своей сути рыбатекст является альтернытивой традиционному Lorem ipsum, который вызывает. По своей сути рыбатекст является альтернытивой традиционному Lorem ipsum, который вызывает.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="cabinet-tab__body" data-tab-default="true" data-tab="profile_tabs" data-tab-body="newsletter">
+                  <div class="cabinet-tab__body-wrapper" data-tab-body-wrapper="true">
+                    <section class="newsletter">
+                      <div class="newsletter__container">
+                        <h3 class="cabinet__title">Рассылка</h3>
+                        <div class="newsletter__items">
+                          <div class="newsletter__item">
+                            <div class="newsletter__head">
+                              <span class="newsletter__label">Email рассылка</span>
+                              <label class="newsletter__switch switch-newsletter">
+                                <input type="checkbox" checked="">
+                                <div class="switch-newsletter__switch-icon">
+                                  <div class="switch-newsletter__switch-circle"></div>
+                                </div>
+                              </label>
+                            </div>
+                            <p class="newsletter__info">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.</p>
+                          </div>
+                          <div class="newsletter__item">
+                            <div class="newsletter__head">
+                              <span class="newsletter__label">SMS рассылка</span>
+                              <label class="newsletter__switch switch-newsletter">
+                                <input type="checkbox">
+                                <div class="switch-newsletter__switch-icon">
+                                  <div class="switch-newsletter__switch-circle"></div>
+                                </div>
+                              </label>
+                            </div>
+                            <p class="newsletter__info">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.</p>
+                          </div>
+                          <div class="newsletter__item">
+                            <div class="newsletter__head">
+                              <span class="newsletter__label">Партнерская рассылка</span>
+                              <label class="newsletter__switch switch-newsletter">
+                                <input type="checkbox">
+                                <div class="switch-newsletter__switch-icon">
+                                  <div class="switch-newsletter__switch-circle"></div>
+                                </div>
+                              </label>
+                            </div>
+                            <p class="newsletter__info">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="cabinet-tab__body" data-tab-default="true" data-tab="profile_tabs" data-tab-body="documents">
+                  <div class="cabinet-tab__body-wrapper" data-tab-body-wrapper="true">
+                    <section class="documents">
+                      <div class="documents__container">
+                        <h3 class="cabinet__title">Документы</h3>
+                        <div class="documents__items">
+                          <div class="documents__item">
+                            <time class="documents__date">
+                              <span>25 июня 2020</span>
+                              <span>21:40</span>
+                            </time>
+                            <span class="documents__label">Описание услуги по займу, общей суммой <span>2 500 ₽</span>
+                            </span>
+                            <strong class="documents__sum">2 500 ₽</strong>
+                            <div class="documents__actions">
+                              <a class="documents__cancel" href="/">Отменить подписку</a>
+                              <a class="documents__button button" href="#">
+                                <span>Персональные предложения</span>
+                              </a>
+                            </div>
+                            <button class="documents__tab-button is-active" type="button" data-tab-toggle-default="true" data-tab="documents" data-tab-button="document_01">
+                              <span>Отчет по автоматической подачи заявки на займ</span>
+                              <svg>
+                                <use href="/assets/images/icons.svg#arrow-drop"></use>
+                              </svg>
+                            </button>
+                            <div class="documents__tab-body is-active" data-tab-toggle-default="true" data-tab="documents" data-tab-body="document_01">
+                              <div data-tab-body-wrapper="true">
+                                <div class="documents__group">
+                                  <div class="documents__logo">
+                                    <img src="/assets/images/documents/logo_01.png" alt="logo">
+                                  </div>
+                                  <span class="documents__label">ОТП банк</span>
+                                  <p class="documents__description">Раньше весь процесс получения кредита занимал 10 дней. Теперь мы можем авторизовать ссуду примерно за 30 минут.</p>
+                                  <time class="documents__date">
+                                    <span>25 июня 2020</span>
+                                    <span>21:40</span>
+                                  </time>
+                                </div>
+                                <div class="documents__group">
+                                  <div class="documents__logo">
+                                    <img src="/assets/images/documents/logo_02.png" alt="logo">
+                                  </div>
+                                  <span class="documents__label">ОТП банк</span>
+                                  <p class="documents__description">Раньше весь процесс получения кредита занимал 10 дней. Теперь мы можем авторизовать ссуду примерно за 30 минут.</p>
+                                  <time class="documents__date">
+                                    <span>25 июня 2020</span>
+                                    <span>21:40</span>
+                                  </time>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="documents__item">
+                            <time class="documents__date">
+                              <span>25 июня 2020</span>
+                              <span>21:40</span>
+                            </time>
+                            <span class="documents__label">Описание услуги по займу, общей суммой <span>2 500 ₽</span>
+                            </span>
+                            <strong class="documents__sum">2 500 ₽</strong>
+                            <div class="documents__actions">
+                              <a class="documents__cancel" href="/">Отменить подписку</a>
+                              <a class="documents__button button" href="#">
+                                <span>Персональные предложения</span>
+                              </a>
+                            </div>
+                            <button class="documents__tab-button" type="button" data-tab-toggle-default="true" data-tab="documents" data-tab-button="document_02">
+                              <span>Отчет по автоматической подачи заявки на займ</span>
+                              <svg>
+                                <use href="/assets/images/icons.svg#arrow-drop"></use>
+                              </svg>
+                            </button>
+                            <div class="documents__tab-body" data-tab-toggle-default="true" data-tab="documents" data-tab-body="document_02">
+                              <div data-tab-body-wrapper="true">
+                                <div class="documents__group">
+                                  <div class="documents__logo">
+                                    <img src="/assets/images/documents/logo_01.png" alt="logo">
+                                  </div>
+                                  <span class="documents__label">ОТП банк</span>
+                                  <p class="documents__description">Раньше весь процесс получения кредита занимал 10 дней. Теперь мы можем авторизовать ссуду примерно за 30 минут.</p>
+                                  <time class="documents__date">
+                                    <span>25 июня 2020</span>
+                                    <span>21:40</span>
+                                  </time>
+                                </div>
+                                <div class="documents__group">
+                                  <div class="documents__logo">
+                                    <img src="/assets/images/documents/logo_02.png" alt="logo">
+                                  </div>
+                                  <span class="documents__label">ОТП банк</span>
+                                  <p class="documents__description">Раньше весь процесс получения кредита занимал 10 дней. Теперь мы можем авторизовать ссуду примерно за 30 минут.</p>
+                                  <time class="documents__date">
+                                    <span>25 июня 2020</span>
+                                    <span>21:40</span>
+                                  </time>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="documents__item">
+                            <time class="documents__date">
+                              <span>25 июня 2020</span>
+                              <span>21:40</span>
+                            </time>
+                            <span class="documents__label">Описание услуги по займу, общей суммой <span>2 500 ₽</span>
+                            </span>
+                            <strong class="documents__sum">2 500 ₽</strong>
+                            <div class="documents__actions">
+                              <a class="documents__cancel" href="/">Отменить подписку</a>
+                              <a class="documents__button button" href="#">
+                                <span>Персональные предложения</span>
+                              </a>
+                            </div>
+                            <button class="documents__tab-button" type="button" data-tab-toggle-default="true" data-tab="documents" data-tab-button="document_03">
+                              <span>Отчет по автоматической подачи заявки на займ</span>
+                              <svg>
+                                <use href="/assets/images/icons.svg#arrow-drop"></use>
+                              </svg>
+                            </button>
+                            <div class="documents__tab-body" data-tab-toggle-default="true" data-tab="documents" data-tab-body="document_03">
+                              <div data-tab-body-wrapper="true">
+                                <div class="documents__group">
+                                  <div class="documents__logo">
+                                    <img src="/assets/images/documents/logo_01.png" alt="logo">
+                                  </div>
+                                  <span class="documents__label">ОТП банк</span>
+                                  <p class="documents__description">Раньше весь процесс получения кредита занимал 10 дней. Теперь мы можем авторизовать ссуду примерно за 30 минут.</p>
+                                  <time class="documents__date">
+                                    <span>25 июня 2020</span>
+                                    <span>21:40</span>
+                                  </time>
+                                </div>
+                                <div class="documents__group">
+                                  <div class="documents__logo">
+                                    <img src="/assets/images/documents/logo_02.png" alt="logo">
+                                  </div>
+                                  <span class="documents__label">ОТП банк</span>
+                                  <p class="documents__description">Раньше весь процесс получения кредита занимал 10 дней. Теперь мы можем авторизовать ссуду примерно за 30 минут.</p>
+                                  <time class="documents__date">
+                                    <span>25 июня 2020</span>
+                                    <span>21:40</span>
+                                  </time>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="cabinet-tab__body" data-tab-default="true" data-tab="profile_tabs" data-tab-body="feedback">
+                  <div class="cabinet-tab__body-wrapper" data-tab-body-wrapper="true">
+                    <section class="feedback">
+                      <div class="feedback__container">
+                        <h3 class="cabinet__title">Форма обратной связи</h3>
+                        <form class="feedback__form">
+                          <div class="feedback__items">
+                            <div class="feedback__row">
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Имя</span>
+                                <label class="input__wrapper" aria-label="Имя">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Мобильный телефон</span>
+                                <label class="input__wrapper" aria-label="Мобильный телефон">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                              <div class="input" data-input="true" data-input-default="true">
+                                <span class="input__label">Электронная почта</span>
+                                <label class="input__wrapper" aria-label="Электронная почта">
+                                  <div class="input__group">
+                                    <input class="input__target" type="text" data-input-target="true">
+                                  </div>
+                                  <button class="input__reset" type="button" data-input-reset="true">
+                                    <svg class="input__icon">
+                                      <use href="/assets/images/icons.svg#cross"></use>
+                                    </svg>
+                                  </button>
+                                </label>
+                              </div>
+                            </div>
+                            <div class="input" data-input="true" data-input-default="true">
+                              <span class="input__label">Сообщение</span>
+                              <label class="input__wrapper" aria-label="Сообщение">
+                                <div class="input__group">
+                                  <textarea class="input__target" rows="5" data-input-target="true" data-input-rows-max="10"></textarea>
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                          <button class="feedback__submit button" type="submit">
+                            <span>Отправить</span>
+                          </button>
+                        </form>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                <div class="cabinet-tab__body" data-tab-default="true" data-tab="profile_tabs" data-tab-body="offers">
+                  <div class="cabinet-tab__body-wrapper" data-tab-body-wrapper="true">
+                    <section class="cabinet-offers">
+                      <div class="cabinet-offers__container">
+                        <h3 class="cabinet__title">Мои предложения</h3>
+                        <div class="cabinet-offers__items">
+                          <article class="loan">
+                            <span class="loan__rate">Ставка 1% в день</span>
+                            <div class="loan__item-body">
+                              <img class="loan__logo" src="/assets/images/loans/logo_01.png" alt="loans logo">
+                              <strong class="loan__value">250 000 ₽</strong>
+                              <a class="loan__button button" href="#">
+                                <span>Получить</span>
+                              </a>
+                            </div>
+                          </article>
+                          <article class="loan">
+                            <span class="loan__rate">Ставка 1% в день</span>
+                            <div class="loan__item-body">
+                              <img class="loan__logo" src="/assets/images/loans/logo_02.png" alt="loans logo">
+                              <strong class="loan__value">250 000 ₽</strong>
+                              <a class="loan__button button" href="#">
+                                <span>Получить</span>
+                              </a>
+                            </div>
+                          </article>
+                          <article class="loan">
+                            <span class="loan__rate">Ставка 1% в день</span>
+                            <div class="loan__item-body">
+                              <img class="loan__logo" src="/assets/images/loans/logo_03.png" alt="loans logo">
+                              <strong class="loan__value">250 000 ₽</strong>
+                              <a class="loan__button button" href="#">
+                                <span>Получить</span>
+                              </a>
+                            </div>
+                          </article>
+                          <article class="loan">
+                            <span class="loan__rate">Ставка 1% в день</span>
+                            <div class="loan__item-body">
+                              <img class="loan__logo" src="/assets/images/loans/logo_04.png" alt="loans logo">
+                              <strong class="loan__value">250 000 ₽</strong>
+                              <a class="loan__button button" href="#">
+                                <span>Получить</span>
+                              </a>
+                            </div>
+                          </article>
+                          <article class="loan">
+                            <span class="loan__rate">Ставка 1% в день</span>
+                            <div class="loan__item-body">
+                              <img class="loan__logo" src="/assets/images/loans/logo_05.png" alt="loans logo">
+                              <strong class="loan__value">250 000 ₽</strong>
+                              <a class="loan__button button" href="#">
+                                <span>Получить</span>
+                              </a>
+                            </div>
+                          </article>
+                          <article class="loan">
+                            <span class="loan__rate">Ставка 1% в день</span>
+                            <div class="loan__item-body">
+                              <img class="loan__logo" src="/assets/images/loans/logo_06.png" alt="loans logo">
+                              <strong class="loan__value">250 000 ₽</strong>
+                              <a class="loan__button button" href="#">
+                                <span>Получить</span>
+                              </a>
+                            </div>
+                          </article>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="footer">
+        <div class="footer__content content-grid">
+          <div class="footer__contacts">
+            <div class="footer__contact">
+              <img src="/assets/images/footer/icon_01.svg" alt="icon">
+              <div class="footer__contact-group">
+                <span>Телефон</span>
+                <a href="tel:8 (800) 555-98-79">8 (800) 555-98-79</a>
+              </div>
+            </div>
+            <div class="footer__contact">
+              <img src="/assets/images/footer/icon_02.svg" alt="icon">
+              <div class="footer__contact-group">
+                <span>E-mail</span>
+                <a href="mailto:support@moneybroz.сom">support@moneybroz.сom</a>
+              </div>
+            </div>
+            <div class="footer__contact">
+              <img src="/assets/images/footer/icon_03.svg" alt="icon">
+              <div class="footer__contact-group">
+                <span>Адрес</span>
+                <a href="/">603093, Нижегородская обл., г. Нижний Новгород, ул. Родионова, д. 190А, пом. П14</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__info">
+            <p>Услугу подбора предложений “MoneyBroz” предоставляет компания &quot;Шпаркасса&quot;, ОГРН 1195275012327, ИНН/КПП 5260461690 / 526001001. Сайт оказывает платные услуги по подбору кредитных продуктов для клиентов, а именно предлагает клиенту список предложений кредитных учреждений, некредитных финансовый организаций, в которые клиент может обратиться с целью оформления заявки на кредитный продукт. Проект не является банком или кредитором, не относится к финансовым учреждениям и не несёт ответственности за последствия любых заключенных договоров кредитования или условия по ним. Минимальная процентная ставка у некоторых партнеров составляет 0%. Чтобы оформить заявку на получение займа, необходимо заполнить анкету на сайте проекта. Совершая любые действия на сайте, вы даете свое<a href="/">Согласие на обработку персональных данных</a>,<!-- -->
+              <a href="/">Согласие на получение рекламных материалов</a> и<!-- -->
+              <a href="/">Согласие на подписку</a>. Вы ознакомились и соглашаетесь с <a href="/">Договором публичной оферты</a>,<!-- -->
+              <a href="/">Политикой Конфиденциальности</a>.
+            </p>
+            <p>* У пользователей сервиса есть возможность получить займ с минимальной процентной ставкой 0%. Подробности при выборе персонального предложения.</p>
+            <p>По любым вопросам вы можете связаться со специалистами сервиса по электронной почте <a href="/">support@moneybroz.ru</a>
+            </p>
+            <p>Обработка заявки платная: стоимость услуги (далее по сайту — Активация сервиса) составляет 1 (один) рубль разовым платежом и 399 (триста девяносто девять) рублей с периодичностью согласно<!-- -->
+              <a href="/">тарифам</a>сервиса.
+            </p>
+            <p>Если услуга перестала быть актуальна для вас (вы получили займ или более не нуждаетесь в займах), вы можете самостоятельно отписаться от услуги в любой момент <a href="/">Изменить подписку</a>.</p>
+          </div>
+          <div class="footer__copyright">
+            <span>©2020 Moneybroz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <meta property="description" content="description">
+    <link rel="icon" href="/assets/images/favicon.svg">
+    <script src="/assets/main.js" type="module"></script>
+    <link rel="stylesheet" href="/assets/bundle.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__content" data-header="true">
+          <div class="header__container container">
+            <a class="header__logo" href="/">
+              <img src="/assets/images/logo/logo_01.svg" alt="Logo">
+            </a>
+            <nav class="header__navigation navigation" data-header-menu="true">
+              <div class="navigation__container">
+                <div class="navigation__scroll-content" data-custom-os="true">
+                  <div class="navigation__body">
+                    <div class="navigation__actions">
+                      <button class="navigation__action button_transparent button" type="button">
+                        <span>Войти</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button class="button" type="button">
+                  <span>Мои займы</span>
+                </button>
+              </div>
+            </nav>
+            <button class="header__menu-button" type="button" data-header-menu-button="true">
+              <svg class="header__menu-icon">
+                <use href="/assets/images/icons.svg#menu"></use>
+              </svg>
+              <svg class="header__close-icon">
+                <use href="/assets/images/icons.svg#cross"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      <main class="home">
+        <section class="home__main home-main">
+          <div class="home-main__content content-grid">
+            <div class="home-main__title title title_no-accent">
+              <h1>Новым клиентам
+                <br> займ под 0%
+              </h1>
+            </div>
+            <div class="home-main__range range-slider">
+              <form class="range-slider__form">
+                <img class="range-slider__form-decor" src="/assets/images/range-slider/decor_01.svg" alt="decor">
+                <div class="range-slider__form-container">
+                  <div class="range-slider__group">
+                    <div class="range-slider__current-money">
+                      <span>Введите сумму займа</span>
+                      <strong data-range-slider-sum="true"></strong>
+                    </div>
+                    <div class="range-slider__target" data-range-slider="sum"></div>
+                  </div>
+                  <div class="range-slider__group">
+                    <div class="range-slider__current-value">
+                      <span>Срок</span>
+                      <span data-range-slider-value-date="true">14 дней</span>
+                    </div>
+                    <div class="range-slider__target" data-range-slider="day"></div>
+                  </div>
+                  <button class="range-slider__button button" type="button">
+                    <span>Получить деньги</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="home-main__swiper">
+              <div class="swiper" data-home-features-swiper="true">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="home-main__slide">
+                      <img src="/assets/images/home-main/icon_01.svg" alt="icon">
+                      <span>Шифруем и защищаем данные</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="home-main__slide">
+                      <img src="/assets/images/home-main/icon_02.svg" alt="icon">
+                      <span>Шифруем и защищаем данные</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="home-main__slide">
+                      <img src="/assets/images/home-main/icon_01.svg" alt="icon">
+                      <span>Шифруем и защищаем данные</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home__steps home-steps">
+          <div class="home-steps__content content-grid">
+            <div class="home-steps__title title">
+              <span>4 простых шага</span>
+              <h1>Как получить деньги</h1>
+            </div>
+            <div class="home-steps__body">
+              <div class="home-steps__step home-steps__step_01">
+                <div class="home-steps__icon">
+                  <span class="home-steps__value">01</span>
+                  <img src="/assets/images/home-steps/step_01.svg" alt="Step 1">
+                </div>
+                <strong class="home-steps__label">Заполните
+                  <br> анкету
+                </strong>
+              </div>
+              <img class="home-steps__arrow home-steps__arrow_01" src="/assets/images/home-steps/arrow_01.svg" alt="arrow">
+              <div class="home-steps__step home-steps__step_02">
+                <div class="home-steps__icon">
+                  <span class="home-steps__value">02</span>
+                  <img src="/assets/images/home-steps/step_02.svg" alt="Step 2">
+                </div>
+                <strong class="home-steps__label">Выберите
+                  <br>сумму и срок
+                </strong>
+              </div>
+              <img class="home-steps__arrow home-steps__arrow_02" src="/assets/images/home-steps/arrow_02.svg" alt="arrow">
+              <div class="home-steps__step home-steps__step_03">
+                <div class="home-steps__icon">
+                  <span class="home-steps__value">03</span>
+                  <img src="/assets/images/home-steps/step_03.svg" alt="Step 3">
+                </div>
+                <strong class="home-steps__label">Получите
+                  <br>подтверждение
+                </strong>
+              </div>
+              <img class="home-steps__arrow home-steps__arrow_03" src="/assets/images/home-steps/arrow_01.svg" alt="arrow">
+              <div class="home-steps__step home-steps__step_04">
+                <div class="home-steps__icon">
+                  <span class="home-steps__value">04</span>
+                  <img src="/assets/images/home-steps/step_04.svg" alt="Step 4">
+                </div>
+                <strong class="home-steps__label">Получите
+                  <br>ваши деньги
+                </strong>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home__paycards home-paycards">
+          <div class="home-paycards__content content-grid">
+            <div class="title">
+              <span>Удобно и просто</span>
+              <h1>Способы получить
+                <br> средства
+              </h1>
+            </div>
+            <p class="home__text">Моментальный подбор подходящих займов: просто укажите, какая сумма вам необходима. Мы подберем предложения с моментальным переводом денег на карту. Оплату услуг сервиса можно произвести удобным способом.</p>
+            <div class="home-paycards__logos">
+              <img class="home-paycards__logo" src="/assets/images/home-paycards/logo_01.png" alt="logo">
+              <img class="home-paycards__logo" src="/assets/images/home-paycards/logo_02.png" alt="logo">
+              <img class="home-paycards__logo" src="/assets/images/home-paycards/logo_03.png" alt="logo">
+              <img class="home-paycards__logo" src="/assets/images/home-paycards/logo_04.png" alt="logo">
+              <img class="home-paycards__logo" src="/assets/images/home-paycards/logo_05.png" alt="logo">
+              <img class="home-paycards__logo" src="/assets/images/home-paycards/logo_06.png" alt="logo">
+              <img class="home-paycards__logo" src="/assets/images/home-paycards/logo_07.png" alt="logo">
+              <img class="home-paycards__logo" src="/assets/images/home-paycards/logo_08.png" alt="logo">
+            </div>
+          </div>
+        </section>
+        <section class="home__about home-about">
+          <div class="home-about__content content-grid">
+            <div class="title">
+              <span>о сервисе</span>
+              <h1>Что такое
+                <br> Moneybroz?
+              </h1>
+            </div>
+            <p class="home__text">Moneybroz— это площадка подбора предложений по микрозаймам. Оставьте заявку на получение денег: работаем со всеми клиентами — не важно, какая у вас кредитная история и имеются ли текущие просрочки.</p>
+            <p class="home__text">Обработка заявки платная: стоимость услуги (далее по сайту — Активация сервиса) составляет 1 (один) рубль разовым платежом и 399 (триста девяносто девять) рублей с периодичностью согласно тарифам сервиса.</p>
+            <div class="home-about__body">
+              <div class="home-about__data">
+                <div class="home-about__data-wrapper">
+                  <img src="/assets/images/home-about/icon_01.svg" alt="icon">
+                  <strong>19 542</strong>
+                  <span>одобренных
+                    <br> займов
+                  </span>
+                </div>
+              </div>
+              <div class="home-about__result">
+                <strong>680 МЛН</strong>
+                <span>рублей выдано</span>
+              </div>
+              <div class="home-about__data">
+                <div class="home-about__data-wrapper">
+                  <img src="/assets/images/home-about/icon_01.svg" alt="icon">
+                  <strong>98%</strong>
+                  <span>вероятность
+                    <br>одобрения
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home__actions content-grid">
+          <div class="home__actions-wrapper">
+            <div class="title title_light">
+              <h1>Поможем
+                <br> получить деньги
+                <br> за 10 минут
+              </h1>
+            </div>
+            <button class="home__actions-button button_dark button" type="button">
+              <span>Получить деньги</span>
+            </button>
+          </div>
+        </section>
+        <section class="home__questions questions">
+          <div class="questions__content content-grid">
+            <div class="title">
+              <span>удобно и просто</span>
+              <h1>Часто задаваемые
+                <br> вопросы
+              </h1>
+            </div>
+            <div class="questions__list">
+              <div class="questions__group">
+                <button class="questions__button is-active" type="button" data-tab-toggle-default="true" data-tab="questions" data-tab-button="question_01">Условия выдачи займа<span></span>
+                </button>
+                <div class="questions__body is-active" data-tab-toggle-default="true" data-tab="questions" data-tab-body="question_01">
+                  <div data-tab-body-wrapper="true">
+                    <div class="questions__body-wrapper">
+                      <div class="questions__text-group">
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__group">
+                <button class="questions__button" type="button" data-tab-toggle-default="true" data-tab="questions" data-tab-button="question_02">Как долго рассматривается заявка?<span></span>
+                </button>
+                <div class="questions__body" data-tab-toggle-default="true" data-tab="questions" data-tab-body="question_02">
+                  <div data-tab-body-wrapper="true">
+                    <div class="questions__body-wrapper">
+                      <div class="questions__text-group">
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__group">
+                <button class="questions__button" type="button" data-tab-toggle-default="true" data-tab="questions" data-tab-button="question_03">Если я не успеваю вернуть заем?<span></span>
+                </button>
+                <div class="questions__body" data-tab-toggle-default="true" data-tab="questions" data-tab-body="question_03">
+                  <div data-tab-body-wrapper="true">
+                    <div class="questions__body-wrapper">
+                      <div class="questions__text-group">
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__group">
+                <button class="questions__button" type="button" data-tab-toggle-default="true" data-tab="questions" data-tab-button="question_04">Получу ли я деньги с плохой кредитной историей?<span></span>
+                </button>
+                <div class="questions__body" data-tab-toggle-default="true" data-tab="questions" data-tab-body="question_04">
+                  <div data-tab-body-wrapper="true">
+                    <div class="questions__body-wrapper">
+                      <div class="questions__text-group">
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__group">
+                <button class="questions__button" type="button" data-tab-toggle-default="true" data-tab="questions" data-tab-button="question_05">Сколько я могу получить и на какой срок?<span></span>
+                </button>
+                <div class="questions__body" data-tab-toggle-default="true" data-tab="questions" data-tab-body="question_05">
+                  <div data-tab-body-wrapper="true">
+                    <div class="questions__body-wrapper">
+                      <div class="questions__text-group">
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="questions__group">
+                <button class="questions__button" type="button" data-tab-toggle-default="true" data-tab="questions" data-tab-button="question_06">Переплаты и комиссии по займу?<span></span>
+                </button>
+                <div class="questions__body" data-tab-toggle-default="true" data-tab="questions" data-tab-body="question_06">
+                  <div data-tab-body-wrapper="true">
+                    <div class="questions__body-wrapper">
+                      <div class="questions__text-group">
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                        <p class="questions__text">Часто обстоятельства складываются так, что деньги нужны здесь и сейчас. Мы понимаем это и относимся к вашему времени, как к своему: чтобы вы могли получить займ в любой момент, работаем 24/7.
+                          <br>Чтобы заполнить анкету, вам потребуется около 3 минут, рассмотрение заявки займет еще 5 минут, — и по истечении этого срока вы получите деньги удобным способом.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <div class="footer">
+        <div class="footer__content content-grid">
+          <div class="footer__contacts">
+            <div class="footer__contact">
+              <img src="/assets/images/footer/icon_01.svg" alt="icon">
+              <div class="footer__contact-group">
+                <span>Телефон</span>
+                <a href="tel:8 (800) 555-98-79">8 (800) 555-98-79</a>
+              </div>
+            </div>
+            <div class="footer__contact">
+              <img src="/assets/images/footer/icon_02.svg" alt="icon">
+              <div class="footer__contact-group">
+                <span>E-mail</span>
+                <a href="mailto:support@moneybroz.сom">support@moneybroz.сom</a>
+              </div>
+            </div>
+            <div class="footer__contact">
+              <img src="/assets/images/footer/icon_03.svg" alt="icon">
+              <div class="footer__contact-group">
+                <span>Адрес</span>
+                <a href="/">603093, Нижегородская обл., г. Нижний Новгород, ул. Родионова, д. 190А, пом. П14</a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__info">
+            <p>Услугу подбора предложений “MoneyBroz” предоставляет компания &quot;Шпаркасса&quot;, ОГРН 1195275012327, ИНН/КПП 5260461690 / 526001001. Сайт оказывает платные услуги по подбору кредитных продуктов для клиентов, а именно предлагает клиенту список предложений кредитных учреждений, некредитных финансовый организаций, в которые клиент может обратиться с целью оформления заявки на кредитный продукт. Проект не является банком или кредитором, не относится к финансовым учреждениям и не несёт ответственности за последствия любых заключенных договоров кредитования или условия по ним. Минимальная процентная ставка у некоторых партнеров составляет 0%. Чтобы оформить заявку на получение займа, необходимо заполнить анкету на сайте проекта. Совершая любые действия на сайте, вы даете свое<a href="/">Согласие на обработку персональных данных</a>,<!-- -->
+              <a href="/">Согласие на получение рекламных материалов</a> и<!-- -->
+              <a href="/">Согласие на подписку</a>. Вы ознакомились и соглашаетесь с <a href="/">Договором публичной оферты</a>,<!-- -->
+              <a href="/">Политикой Конфиденциальности</a>.
+            </p>
+            <p>* У пользователей сервиса есть возможность получить займ с минимальной процентной ставкой 0%. Подробности при выборе персонального предложения.</p>
+            <p>По любым вопросам вы можете связаться со специалистами сервиса по электронной почте <a href="/">support@moneybroz.ru</a>
+            </p>
+            <p>Обработка заявки платная: стоимость услуги (далее по сайту — Активация сервиса) составляет 1 (один) рубль разовым платежом и 399 (триста девяносто девять) рублей с периодичностью согласно<!-- -->
+              <a href="/">тарифам</a>сервиса.
+            </p>
+            <p>Если услуга перестала быть актуальна для вас (вы получили займ или более не нуждаетесь в займах), вы можете самостоятельно отписаться от услуги в любой момент <a href="/">Изменить подписку</a>.</p>
+          </div>
+          <div class="footer__copyright">
+            <span>©2020 Moneybroz</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
