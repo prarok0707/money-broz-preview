@@ -53,8 +53,37 @@
               </div>
             </div>
             <form class="base__form">
-              <span class="base__label">Мы отправили Вам СМС с кодом</span>
               <div class="base__inputs">
+                <div class="select">
+                  <div class="select__wrapper">
+                    <span class="select__label">Список городов</span>
+                    <div class="select__body">
+                      <select data-select="true">
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Екатеринбург">Екатеринбург</option>
+                      </select>
+                      <svg class="select__icon">
+                        <use href="/assets/images/icons.svg#arrow-drop"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="select is-error">
+                  <div class="select__wrapper">
+                    <span class="select__label">Список городов (ошибка)</span>
+                    <div class="select__body">
+                      <select data-select="true">
+                        <option value="Санкт-Петербург">Санкт-Петербург</option>
+                        <option value="Москва">Москва</option>
+                        <option value="Екатеринбург">Екатеринбург</option>
+                      </select>
+                      <svg class="select__icon">
+                        <use href="/assets/images/icons.svg#arrow-drop"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
                 <div class="input" data-input="true" data-input-default="true">
                   <span class="input__label">По умолчанию</span>
                   <label class="input__wrapper" aria-label="По умолчанию">
@@ -69,6 +98,19 @@
                     <svg class="input__icon">
                       <use href="/assets/images/icons.svg#calendar"></use>
                     </svg>
+                  </label>
+                </div>
+                <div class="input" data-input="true" data-input-default="true">
+                  <span class="input__label">Список вариантов при вводе</span>
+                  <label class="input__wrapper" aria-label="Список вариантов при вводе">
+                    <div class="input__group">
+                      <input class="input__target" type="text" data-input-target="true" placeholder="Введите: &quot;m&quot;" data-autocomplete="true">
+                    </div>
+                    <button class="input__reset" type="button" data-input-reset="true">
+                      <svg class="input__icon">
+                        <use href="/assets/images/icons.svg#cross"></use>
+                      </svg>
+                    </button>
                   </label>
                 </div>
                 <div class="input is-error" data-input="true" data-input-default="true">
